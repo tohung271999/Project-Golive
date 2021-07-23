@@ -1,0 +1,297 @@
+@media all and (max-width: 1050px) {
+    #find{
+        display: none;
+    }
+    .info-team{
+        width: 1000px;
+    }
+    .container-info-team{
+        overflow-x: scroll;
+    }
+    .container-info-team::-webkit-scrollbar{
+        width: 0;
+    }
+}
+@media all and (min-width: 1200px) {
+   .hiden{
+       text-transform: uppercase;
+       font-size: 40px;
+   }
+   .hiden-cls{
+       font-size: 30px;
+   }
+   .btn-click{
+    width: 150px;
+    height:50px;
+}
+.hiden,.hiden-cls,.container-content{
+    animation-name: animates;
+    animation-duration: 1s;
+}
+}
+@media all and (max-width: 1199px) {
+    .hiden{
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    .hiden-cls{
+        font-size: 20px;
+    }
+    .btn-click{
+        width: 100px;
+        height: 50px;
+    }
+}
+@media all and (max-width: 1000px){
+    .hiden{
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    .hiden-cls{
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 800px){
+    
+    .hiden-cls{
+       display: none;
+    }
+}
+@media all and (max-width: 600px){
+    
+    .hiden-cls{
+       display: none;
+    }
+    .rowbtn{
+     display: none;
+    }
+}
+@media all and (max-width: 500px){
+    
+    .hiden{
+        font-size: 10px;
+    }
+}
+@keyframes animates{
+    0%{transform: translateY(-200px);opacity: 0;}
+    100%{transform: translateY(0px);opacity: 1;}
+}
+/* public */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.color-red{
+    color: red;
+}
+a span:hover{
+    color: red;
+}
+a span{
+    color: white;
+}
+@media all and (min-width: 992px) {
+    .navbar .nav-item:hover .dropdown-item {color: red;}
+    .navbar .nav-item .dropdown-item:hover{color: black;}
+	.navbar .nav-item .dropdown-menu{ display: none; }
+    .navbar .nav-item:hover .nav-link{ color: red;  }
+    .navbar .nav-item:hover #navbarDropdownMenuLink{color: red;}
+	.navbar .nav-item:hover .dropdown-menu{ display: block; background-color: black;}
+    .navbar .nav-item .dropdown-menu{ margin-top:0;}
+    .container-article .container-slider .carousel .carousel-inner .carousel-item {transition: all 0.5s ease-in-out;}
+}
+/* end-public */
+
+.carousel-inner >  .carousel-item > .carousel-caption{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.img-team:hover{
+    position: relative;
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition: 0.5s;
+    box-shadow: 0px 5px 20px black;
+}
+.img-team{
+   transform: translateY(0px);
+   transition: 0.5s;
+}
+
+.name-team b:hover{
+    color: red;
+    cursor: pointer;
+}
+.hover-effect{
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.opacity-link{
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.container-image{
+    position: relative;
+    width: 100%;
+    height:100%;
+    cursor: pointer;
+}
+.container-image .effect img{
+    filter: grayscale(100%);
+    opacity: 0.5;
+   
+}
+.section-zoom{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index: 10;
+    display: none;
+}
+.section-zoom .zoom-center{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+}
+#close-popup:hover{
+color: red;
+cursor: pointer;
+}
+#img-popup{
+    box-shadow: 2px 2px 10px black;
+}
+ol li{
+    max-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+}
+.setpricing{
+    border-radius: 10px;
+    background: white;
+}
+.cell-nan{
+    height: 100px;
+    background-color: white;
+}
+.cell-nan:hover{
+cursor: pointer;
+transform: translateY(-10px);
+box-shadow: 2px 2px 10px white;
+position: relative;
+z-index: 2;
+}
+.cell-nan:active{
+    transform: translateY(-7px);
+}
+
+
+.btn-active,
+.btn-active:link,
+.btn-active:visited{
+    width: 150px;
+    height:50px;
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-active:hover{
+    background-color: gray;
+    color: red;
+}
+.btn-active::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    border-radius: 10px;
+    transition: all 0.6s;
+    outline: none;
+    border: none;
+}
+.btn-active:hover::after{
+  transform: scale(1.4,1.6);
+  opacity: 0;
+
+}
+.tele-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 60px;
+    z-index: 10;
+   
+}
+.tele-top a i{
+    color: gray;
+}
+.tele-top a i:hover{
+    color: rgb(173, 212, 99);
+}
+.container-find{
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+.rowtext input{
+    border: none;
+    width: 0px;
+    outline: none;
+}
+
+.itemfind{
+    position: absolute;
+    right:0px;
+    width: 40px;
+    height: 40px;
+}
+.container-find:hover{
+    width: 200px;
+}
+.container-find:hover .rowtext input{
+   width: 150px;
+   transition: all 0.5s;
+}
+.itemfind i:active{
+    color: red;
+}
+@media only screen and (max-width : 1326px){
+    .container-find:hover .rowtext input{
+        width: 80px;
+        transition: all 0.5s;
+     } 
+     .container-find:hover{
+        width: 120px;
+    }
+}
+.header-max,.navbar-max,.infoman,.container-info-team,.nan,.services,.show-image,.pricing,.footer1,.footer2{
+    max-width: 1600px !important
+}
+#goToTop{
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}

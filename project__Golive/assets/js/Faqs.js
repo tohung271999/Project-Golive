@@ -1,0 +1,20 @@
+$(document).ready(function(){
+    $("#sile1").click(function(){
+      $("#sile-txt").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#sile2").click(function(){
+      $("#sile-txt2").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#sile3").click(function(){
+      $("#sile-txt3").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#sile4").click(function(){
+      $("#sile-txt4").slideToggle("slow");
+    });
+});

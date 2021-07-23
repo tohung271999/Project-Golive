@@ -1,0 +1,113 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.color-red{
+    color: red;
+}
+a span:hover{
+    color: red;
+}
+a span{
+    color: white;
+}
+@media all and (min-width: 992px) {
+    .navbar .nav-item:hover .dropdown-item {color: red;}
+    .navbar .nav-item .dropdown-item:hover{color: black;}
+	.navbar .nav-item .dropdown-menu{ display: none; }
+    .navbar .nav-item:hover .nav-link{ color: red;  }
+    .navbar .nav-item:hover #navbarDropdownMenuLink{color: red;}
+	.navbar .nav-item:hover .dropdown-menu{ display: block; background-color: black;}
+    .navbar .nav-item .dropdown-menu{ margin-top:0;}
+    .container-article .container-slider .carousel .carousel-inner .carousel-item {transition: all 0.5s ease-in-out;}
+}
+#goToTop{
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}.container-find{
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+.rowtext input{
+    border: none;
+    width: 0px;
+    outline: none;
+}
+
+.itemfind{
+    position: absolute;
+    right:0px;
+    width: 40px;
+    height: 40px;
+}
+.container-find:hover{
+    width: 200px;
+}
+.container-find:hover .rowtext input{
+   width: 150px;
+   transition: all 0.5s;
+}
+.itemfind i:active{
+    color: red;
+}
+@media only screen and (max-width : 1326px){
+    .container-find:hover .rowtext input{
+        width: 80px;
+        transition: all 0.5s;
+     } 
+     .container-find:hover{
+        width: 120px;
+    }
+}
+
+
+.comming-soon{
+    padding: 100px 0;
+}
+.h2-conten{
+    text-align: center;
+    
+}
+.text-p{
+    text-align: center;
+    padding: 10px 10px;
+}
+.form-input{
+    text-align: center;
+    padding: 15px 10px;
+    letter-spacing: 1px;
+
+}
+.form-input input{
+    width: 75%;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    outline: none;
+}
+.aligncenter{
+    display: flex;
+    margin: 0 auto 15px;
+    padding: 10px 30px;
+}
+.cont-css{
+    padding: 50px 40px;
+    border: 1px solid white;
+    background-color: #eaeaea;
+}
+:hover a{
+    text-decoration: none;
+    color: gray;
+}
